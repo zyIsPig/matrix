@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/gulu/CLionProjects/matrix/main.cpp
+iostream
+-
+matrix/matrix.h
+/home/gulu/CLionProjects/matrix/matrix/matrix.h
+matrix/matrix.cpp
+/home/gulu/CLionProjects/matrix/matrix/matrix.cpp
+
+/home/gulu/CLionProjects/matrix/matrix/matrix.cpp
+matrix.h
+/home/gulu/CLionProjects/matrix/matrix/matrix.h
+type_traits
+-
+
+/home/gulu/CLionProjects/matrix/matrix/matrix.h
+cstdio
+-
+

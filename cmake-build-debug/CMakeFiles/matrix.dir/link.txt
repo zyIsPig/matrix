@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/matrix.dir/main.cpp.o CMakeFiles/matrix.dir/matrix/matrix.cpp.o CMakeFiles/matrix.dir/matrix/sparse_matrix.cpp.o  -o matrix 
