@@ -6,13 +6,17 @@
 #define MATRIX_MATRIX_H
 
 #include <cstdio>
-    template<typename T, size_t M, size_t N>
+    template<typename T>
     class matrix {
     private:
-        T data[M][N];
+        int row;
+        int col;
+        matrix<T> add_private(matrix<T>);
     public:
+
+        T **p;
         //default size
-        matrix();
+        matrix(int col,int row);
 
         //deconstructor
         ~matrix();
@@ -21,6 +25,20 @@
         void test_len();
 
         void print();
+
+        void * getP();
+
+        T get(int,int);
+
+        matrix<T> add(matrix<T>);
+
+        /**
+         * the part is about the  basic arithmetic reduction operations
+         */
+
+
+
+
     };
 
 

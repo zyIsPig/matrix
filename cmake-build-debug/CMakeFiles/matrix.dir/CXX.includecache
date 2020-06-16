@@ -6,21 +6,31 @@
 
 #IncludeRegexTransform: 
 
-/home/gulu/CLionProjects/matrix/main.cpp
+/cygdrive/i/matrix1/main.cpp
 iostream
 -
 matrix/matrix.h
-/home/gulu/CLionProjects/matrix/matrix/matrix.h
+/cygdrive/i/matrix1/matrix/matrix.h
 matrix/matrix.cpp
-/home/gulu/CLionProjects/matrix/matrix/matrix.cpp
+/cygdrive/i/matrix1/matrix/matrix.cpp
 
-/home/gulu/CLionProjects/matrix/matrix/matrix.cpp
+/cygdrive/i/matrix1/matrix/exception.h
+
+/cygdrive/i/matrix1/matrix/matrix.cpp
 matrix.h
-/home/gulu/CLionProjects/matrix/matrix/matrix.h
+/cygdrive/i/matrix1/matrix/matrix.h
 type_traits
 -
+malloc.h
+-
+string
+/cygdrive/i/matrix1/matrix/string
+iostream
+/cygdrive/i/matrix1/matrix/iostream
+exception.h
+/cygdrive/i/matrix1/matrix/exception.h
 
-/home/gulu/CLionProjects/matrix/matrix/matrix.h
+/cygdrive/i/matrix1/matrix/matrix.h
 cstdio
 -
 

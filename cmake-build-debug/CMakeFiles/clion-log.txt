@@ -1,4 +1,4 @@
-/home/gulu/Downloads/clion-2020.1.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/usr/bin/make -DCMAKE_C_COMPILER=/usr/bin/gcc -DCMAKE_CXX_COMPILER=/usr/bin/g++ -G "CodeBlocks - Unix Makefiles" /home/gulu/CLionProjects/matrix
+C:\Users\gulu\AppData\Local\JetBrains\CLion2020.1\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /cygdrive/i/matrix1
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/gulu/CLionProjects/matrix/cmake-build-debug
+-- Build files have been written to: /cygdrive/i/matrix1/cmake-build-debug
