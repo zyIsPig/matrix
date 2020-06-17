@@ -11,28 +11,9 @@
 #include "Complex.h"
 
 
-//template<typename T>
-//matrix<T>::matrix() {
-//    if(std::is_same<T,int>().value) {
-//
-//        for (int i = 0; i < m; ++i) {
-//            for (int j = 0; j < n; ++j) {
-//                data[i][j] = 0;
-//            }
-//        }
-//    }
-//
-//    else if(std::is_same<T,double>().value){
-//        for (int i = 0; i < m; ++i) {
-//            for (int j = 0; j < n; ++j) {
-//                data[i][j] = 0.0;
-//            }
-//        }
-//    }
-//}
 
 template <typename T>
-matrix<T>:: matrix(int col,int row) {
+matrix::matrix<T>:: matrix(int row,int col) {
     this->col=col;
     this->row=row;
     T ** pointer=(T **)malloc(sizeof(T*)*row);
@@ -43,17 +24,8 @@ matrix<T>:: matrix(int col,int row) {
     p=pointer;
 }
 
-
-
-
-
-//template<typename T>
-//void matrix<T>::test_len() {
-//    printf("%d and %d",sizeof(data),sizeof(data[0]));
-//}
-
 template<typename T>
-matrix<T>::~matrix() {
+matrix::matrix<T>::~matrix() {
 //    for (int i = 0; i <row ; ++i) {
 ////        free(p[i]);
 ////    }
@@ -61,7 +33,7 @@ matrix<T>::~matrix() {
 }
 
 template<typename T>
-void matrix<T>::print() {
+void matrix::matrix<T>::print() {
 
     for (int i = 0; i <row ; ++i) {
         for (int j = 0; j <col ; ++j) {
@@ -72,7 +44,7 @@ void matrix<T>::print() {
 }
 
 template<typename T>
-T matrix<T>::get(int col,int row) {
+T matrix::matrix<T>::get(int col,int row) {
 
     //check valid
     return T(p)[row][col];
@@ -80,12 +52,7 @@ T matrix<T>::get(int col,int row) {
 }
 
 template<typename T>
-void *matrix<T>::getP() {
-    return p;
-}
-
-template<typename T>
-matrix<T> matrix<T>::add(const matrix<T> matrix1) {
+matrix::matrix<T> matrix::matrix<T>::add(const matrix<T> matrix1) {
 
     try {
         if(this->row==matrix1.row && this->col==matrix1.col) {
@@ -100,24 +67,19 @@ matrix<T> matrix<T>::add(const matrix<T> matrix1) {
 }
 
 template<typename T>
-matrix<T> matrix<T>::add_private(matrix<T> matrix1) {
-
+matrix::matrix<T> matrix::matrix<T>::add_private(matrix<T> matrix1) {
 
         matrix<T> m(col,row);
-
         for (int i = 0; i < row; ++i) {
             for (int j = 0; j < col ; ++j) {
                 m.p[i][j]=this->p[i][j]+matrix1.p[i][j];
             }
         }
         return m;
-
-
-
 }
 
 template<typename T>
-T matrix<T>::find_max() {
+T matrix::matrix<T>::find_max() {
     T max_num = p[0][0];
 
     for (int i = 0; i<row; i++ ){
@@ -131,7 +93,7 @@ T matrix<T>::find_max() {
 }
 
 template<typename T>
-void matrix<T>::copy(T ** t,int row,int col) {
+void matrix::matrix<T>::copy(T ** t,int row,int col) {
 
     for (int i = 0; i < row; ++i) {
         for (int j = 0; j < col ; ++j) {
@@ -142,7 +104,7 @@ void matrix<T>::copy(T ** t,int row,int col) {
 }
 
 template<typename T>
-T matrix<T>::find_min() {
+T matrix::matrix<T>::find_min() {
     T min_num = p[0][0];
 
     for (int i = 0; i<row; i++ ){
@@ -156,7 +118,7 @@ T matrix<T>::find_min() {
 }
 
 template<typename T>
-T matrix<T>::sum() {
+T matrix::matrix<T>::sum() {
     T summ = T();
     for (int i = 0; i<row; i++ ){
         for (int j = 0; j<col; j++){
@@ -167,7 +129,7 @@ T matrix<T>::sum() {
 }
 
 template<typename T>
-T matrix<T>::average() {
+T matrix::matrix<T>::average() {
     T summ = T();
     T ave = T();
 
@@ -181,42 +143,17 @@ T matrix<T>::average() {
 }
 
 template<typename T>
-T matrix<T>::axis_find_max() {
+T matrix::matrix<T>::axis_find_max() {
     return nullptr;
 }
 
 template<typename T>
-matrix<T> matrix<T>::scalar_muti(T t) {
+matrix::matrix<T> matrix::matrix<T>::scalar_muti(T t) {
 
-    matrix<T> new_matrix(col,row);
-    for (int i = 0; i < row; ++i) {
-        for (int j = 0; j < col; ++j) {
-            new_matrix[i][j]=p[i][j]*t;
-        }
-    }
-    return new_matrix;
-
-}
-
-template<typename T>
-matrix<T> matrix<T>::scalar_div(T t) {
-
-    matrix<T> new_matrix(col,row);
-    for (int i = 0; i < row; ++i) {
-        for (int j = 0; j < col; ++j) {
-            new_matrix[i][j]=p[i][j]/t;
-        }
-    }
-    return new_matrix;
-}
-
-
-template<typename T>
-matrix<T> matrix<T>::transpositon() {
     matrix<T> new_matrix(row,col);
     for (int i = 0; i < row; ++i) {
         for (int j = 0; j < col; ++j) {
-            new_matrix[i][j]=p[j][i];
+            new_matrix.p[i][j]=p[i][j]*t;
         }
     }
     return new_matrix;
@@ -224,27 +161,98 @@ matrix<T> matrix<T>::transpositon() {
 }
 
 template<typename T>
-matrix<T> matrix<T>::conjugation() {
+matrix::matrix<T> matrix::matrix<T>::scalar_div(T t) {
+
+    matrix<T> new_matrix(row,col);
+    for (int i = 0; i < row; ++i) {
+        for (int j = 0; j < col; ++j) {
+            new_matrix.p[i][j]=p[i][j]/t;
+        }
+    }
+    return new_matrix;
+}
+
+
+template<typename T>
+matrix::matrix<T>matrix::matrix<T>::transpositon() {
+    matrix<T> new_matrix(col,row);
+    for (int i = 0; i < row; ++i) {
+        for (int j = 0; j < col; ++j) {
+            new_matrix.p[j][i]=p[i][j];
+        }
+    }
+    return new_matrix;
+
+}
+
+template<typename T>
+matrix::matrix<T> matrix::matrix<T>::conjugation() {
     matrix<Complex> matrix1();
+}
+
+template<typename T>
+matrix::matrix<T> matrix::matrix<T>::muti(const matrix<T>) {
+
+
+
+
+
+
 
 }
 
 template<typename T>
-matrix<T> matrix<T>::muti(const matrix<T>) {
+vector<T> matrix::matrix<T>::muti(vector<T> v) {
+
+    vector<T> new_vec(row);
+
+    try {
 
 
-
-
-
+        if (col == v.len) {
+            for (int i = 0; i < row; ++i) {
+                T ans = T();
+                for (int j = 0; j < col; ++j) {
+                    ans = ans + this->p[i][j] * v.p[j];
+                }
+                new_vec.p[i] = ans;
+            }
+        } else {
+            throw (degreeNotSuitable(1));
+        }
+    }
+    catch (degreeNotSuitable d) {
+        std::cerr<<d.exp<<std::endl;
+    }
+    return new_vec;
 
 }
 
 template<typename T>
-sparse_matrix<T> matrix<T>::convert_2_matrix() {
-    sparse_matrix<T> sparseMatrix(col,row);
+matrix::matrix<T> matrix::matrix<T>::subb(matrix<T> matrix1) {
 
+    try {
+        if(this->row==matrix1.row && this->col==matrix1.col) {
+            return sub_private(matrix1);
+        } else{
+            throw (degreeNotSuitable(1));
+        }
+    }
+    catch (degreeNotSuitable d) {
+        std::cerr<<d.exp<<std::endl;
+    }
 
+}
 
+template<typename T>
+matrix::matrix<T> matrix::matrix<T>::sub_private(matrix<T> matrix1) {
+    matrix<T> m(col,row);
+    for (int i = 0; i < row; ++i) {
+        for (int j = 0; j < col ; ++j) {
+            m.p[i][j]=this->p[i][j]-matrix1.p[i][j];
+        }
+    }
+    return m;
 }
 
 
@@ -254,15 +262,10 @@ sparse_matrix<T> matrix<T>::convert_2_matrix() {
 
 
 
-//template <typename T>
-//matrix<T> matrix<T>::operator+(const matrix<T> m1) {
-//
-//    for (int i=0;i<m;i++){
-//        for (int j = 0; j < n ; ++j) {
-//            data[i][j]+=m1.data[i][j];
-//        }
-//    }
-//    return this;
-//
-//
-//}
+
+
+
+
+
+
+

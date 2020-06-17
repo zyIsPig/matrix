@@ -7,19 +7,27 @@
 
 #include <cstdio>
 #include "sparse_matrix.h"
+#include "vector.hpp"
+
+namespace matrix {
     template<typename T>
     class matrix {
     private:
         int row{};
         int col{};
+
         matrix<T> add_private(matrix<T>);
+        matrix<T> sub_private(matrix<T>);
+
     public:
 
         T **p;
-        //default size
-        matrix(int col,int row);
 
-        void copy(T **,int row,int col);
+        //default size
+        matrix(int row, int col);
+
+        void copy(T **, int row, int col);
+
         //deconstructor
         ~matrix();
 
@@ -28,12 +36,11 @@
 
         void print();
 
-        void * getP();
+        void *getP();
 
-        T get(int,int);
+        T get(int, int);
 
         matrix<T> add(matrix<T>);
-
 
 
         /**
@@ -56,7 +63,6 @@
 
         matrix<T> muti(matrix<T>);
 
-        matrix<T> sub(const matrix<T>);
 
         matrix<T> scalar_muti(T);
 
@@ -68,13 +74,13 @@
 
         matrix<T> element_wise_multiplication();
 
+        vector<T> muti(vector<T>);
+
+        matrix<T> subb(matrix<T> m);
 
 
 
-
-
-
-
+//        sparse_matrix<T> convert_2_sparse_matrix();
 
 
 
@@ -82,7 +88,7 @@
     };
 
 
-
+};
 
 
 #endif //MATRIX_MATRIX_H

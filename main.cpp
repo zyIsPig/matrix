@@ -1,8 +1,10 @@
 #include <iostream>
 #include "matrix/matrix.h"
 #include "matrix/matrix.cpp"
-
+#include "matrix/vector.hpp";
+#include "matrix/sparse1.hpp"
 int test[3][3]={{1,2,3},{23,1,2},{3,10,2}};
+int m11[3][3]={{1,0,1},{2,0,2},{21,1,0}};
 
 struct test_str{
     int a=0;
@@ -27,11 +29,11 @@ struct test_str{
 };
 
 
-void copy(matrix<int> &m){
+void copy(matrix::matrix<int> &m){
 
     for (int i = 0; i < 3; ++i) {
         for (int j = 0; j < 3; ++j) {
-            m.p[i][j]=test[i][j];
+            m.p[i][j]=m11[i][j];
         }
     }
 
@@ -39,15 +41,15 @@ void copy(matrix<int> &m){
 }
 
 bool testAdd(){
-    matrix<test_str> matrix1(3,2);
-    matrix<test_str> matrix2(3,2);
+    matrix::matrix<test_str> matrix1(3,2);
+    matrix::matrix<test_str> matrix2(3,2);
 
     matrix2=matrix2.add(matrix1);
     matrix2.print();
 }
 
 bool test_find_max(){
-    matrix<int> matrix1( 3, 3);
+    matrix::matrix<int> matrix1( 3, 3);
     copy(matrix1);
     matrix1.print();
     int max=matrix1.find_max();
@@ -58,18 +60,58 @@ bool test_find_max(){
 }
 
 bool test_sum(){
-    matrix<int> matrix1(3,3);
+    matrix::matrix<int> matrix1(3,3);
     copy(matrix1);
     int cnt=matrix1.sum();
     std::cout<<cnt<<std::endl;
 }
 
 
+bool test_sparse(){
+
+    matrix::matrix<int> matrix1(3,3);
+    copy(matrix1);
+    matrix1.print();
+}
+
+bool test_vector(){
+
+    vector<int> v(3);
+    vector<int> v4(3);
+    v.p[1]=2;
+    v4.p[2]=11;
+    v=v.add(v4);
+    v.print();
+
+}
+
+bool test_vector1(){
+
+    matrix::matrix<int> ma(2,2);
+    ma.p[0][0]=1;
+    ma.p[0][1]=2;
+    ma.p[1][0]=3;
+    ma.p[1][1]=4;
+    vector<int> v(2);
+    v.p[0]=1;
+    v.p[1]=2;
+    v=ma.muti(v);
+    v.print();
+
+}
+
+bool test_trans(){
+
+}
+
+bool testParse(){
+    sparse::sparse_matrix<int> sparseMatrix(3,3);
+    sparseMatrix.convert();
+}
 
 
-int main() {
 
-
+void test1(){
     matrix<int> mat1(3,4);
     int m1[3][4]={{1,2,3,4},
                   {5,6,7,8},
@@ -81,6 +123,47 @@ int main() {
     }
     mat1.print();
     matrix<int> mat2(3,3);
+    int m2[3][3]={{1,2,3},
+                  {-1,0,1},
+                  {2,1,2}};
+    for(int i=0;i<3;i++){
+        for(int j=0;j<3;j++){
+            mat2.p[i][j]=m2[i][j];
+        }
+    }
+    mat2.print();
+    mat1.reshape(2,6);
+    mat1.print();
+    matrix<int> mat4=mat1.slice(0,1,0,1);
+    mat4.print();
+//    matrix<int> mat3=mat1.convoluton(mat2);
+//    mat3.print();
+    return 0;
+}
+
+int main() {
+
+//    test1();
+    test_sparse();
+    matrix::matrix <int> mat1(3,4);
+
+    int m1[3][4]={{1,2,3,4},
+                  {5,6,7,8},
+                  {9,8,7,6}};
+
+    for(int i=0;i<3;i++){
+        for(int j=0;j<4;j++){
+            mat1.p[i][j]=m1[i][j];
+        }
+    }
+    mat1.print();
+//    mat1=mat1.scalar_div(2);
+////    mat1=mat1.transpositonspositon();
+//    mat1.print();
+//    matrix<int> mat2(3,3);
+//    test_sparse();
+
+//    test_vector1();
 
     return 0;
 //    testAdd();
