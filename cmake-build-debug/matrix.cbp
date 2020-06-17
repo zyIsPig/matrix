@@ -83,6 +83,15 @@
 		<Unit filename="/cygdrive/i/matrix1/main.cpp">
 			<Option target="matrix"/>
 		</Unit>
+		<Unit filename="/cygdrive/i/matrix1/matrix/Complex.h">
+			<Option target="matrix"/>
+		</Unit>
+		<Unit filename="/cygdrive/i/matrix1/matrix/Vector.cpp">
+			<Option target="matrix"/>
+		</Unit>
+		<Unit filename="/cygdrive/i/matrix1/matrix/Vector.h">
+			<Option target="matrix"/>
+		</Unit>
 		<Unit filename="/cygdrive/i/matrix1/matrix/exception.h">
 			<Option target="matrix"/>
 		</Unit>

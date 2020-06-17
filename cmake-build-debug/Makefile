@@ -150,6 +150,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+matrix/Vector.o: matrix/Vector.cpp.o
+
+.PHONY : matrix/Vector.o
+
+# target to build an object file
+matrix/Vector.cpp.o:
+	$(MAKE) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/matrix/Vector.cpp.o
+.PHONY : matrix/Vector.cpp.o
+
+matrix/Vector.i: matrix/Vector.cpp.i
+
+.PHONY : matrix/Vector.i
+
+# target to preprocess a source file
+matrix/Vector.cpp.i:
+	$(MAKE) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/matrix/Vector.cpp.i
+.PHONY : matrix/Vector.cpp.i
+
+matrix/Vector.s: matrix/Vector.cpp.s
+
+.PHONY : matrix/Vector.s
+
+# target to generate assembly for a file
+matrix/Vector.cpp.s:
+	$(MAKE) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/matrix/Vector.cpp.s
+.PHONY : matrix/Vector.cpp.s
+
 matrix/matrix.o: matrix/matrix.cpp.o
 
 .PHONY : matrix/matrix.o
@@ -216,6 +243,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... matrix/Vector.o"
+	@echo "... matrix/Vector.i"
+	@echo "... matrix/Vector.s"
 	@echo "... matrix/matrix.o"
 	@echo "... matrix/matrix.i"
 	@echo "... matrix/matrix.s"
