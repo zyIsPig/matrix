@@ -1,8 +1,7 @@
 #ifndef VEC
 #define VEC
-#include "matrix.h"
-
 #include "iostream"
+
 
 template <typename T>
 class vector{
@@ -14,7 +13,6 @@ public:
     vector(int len);
     vector<T> add(vector<T>);
     void print();
-
 
 };
 
@@ -44,8 +42,6 @@ vector<T> vector<T>::add(vector<T> v) {
     }
     return new_vec;
 }
-
-template<typename T>
 
 #endif
 

@@ -1,8 +1,9 @@
 #include <iostream>
 #include "matrix/matrix.h"
 #include "matrix/matrix.cpp"
+#include "matrix/sparse_matrix.h"
 #include "matrix/vector.hpp";
-#include "matrix/sparse1.hpp"
+
 int test[3][3]={{1,2,3},{23,1,2},{3,10,2}};
 int m11[3][3]={{1,0,1},{2,0,2},{21,1,0}};
 
@@ -101,18 +102,7 @@ bool test_vector1(){
 }
 
 bool test_trans(){
-
-}
-
-bool testParse(){
-    sparse::sparse_matrix<int> sparseMatrix(3,3);
-    sparseMatrix.convert();
-}
-
-
-
-void test1(){
-    matrix<int> mat1(3,4);
+    matrix::matrix<int> mat1(3,4);
     int m1[3][4]={{1,2,3,4},
                   {5,6,7,8},
                   {9,8,7,6}};
@@ -122,7 +112,7 @@ void test1(){
         }
     }
     mat1.print();
-    matrix<int> mat2(3,3);
+    matrix::matrix<int> mat2(3,3);
     int m2[3][3]={{1,2,3},
                   {-1,0,1},
                   {2,1,2}};
@@ -132,31 +122,41 @@ void test1(){
         }
     }
     mat2.print();
-    mat1.reshape(2,6);
-    mat1.print();
-    matrix<int> mat4=mat1.slice(0,1,0,1);
-    mat4.print();
-//    matrix<int> mat3=mat1.convoluton(mat2);
-//    mat3.print();
+//    mat1.reshape(2,6);
+//    mat1.print();
+//    matrix::matrix<int> mat4=mat1.slice(0,1,0,1);
+//    mat4.print();
+    matrix::matrix<int> mat3=mat1.convoluton(mat2);
+    mat3.print();
+    return 0;
+}
+
+bool test_multi(){
+    matrix::matrix<int> matrix1(3,3);
+    copy(matrix1);
+    matrix::matrix<int> matrix2(3,3);
+    copy(matrix2);
+    matrix2 = matrix1.multiplication(matrix2);
+    matrix2.print();
     return 0;
 }
 
 int main() {
 
-//    test1();
-    test_sparse();
-    matrix::matrix <int> mat1(3,4);
-
-    int m1[3][4]={{1,2,3,4},
-                  {5,6,7,8},
-                  {9,8,7,6}};
-
-    for(int i=0;i<3;i++){
-        for(int j=0;j<4;j++){
-            mat1.p[i][j]=m1[i][j];
-        }
-    }
-    mat1.print();
+//    test_multi();
+    test_trans();
+//    matrix::matrix <int> mat1(3,4);
+//
+//    int m1[3][4]={{1,2,3,4},
+//                  {5,6,7,8},
+//                  {9,8,7,6}};
+//
+//    for(int i=0;i<3;i++){
+//        for(int j=0;j<4;j++){
+//            mat1.p[i][j]=m1[i][j];
+//        }
+//    }
+//    mat1.print();
 //    mat1=mat1.scalar_div(2);
 ////    mat1=mat1.transpositonspositon();
 //    mat1.print();

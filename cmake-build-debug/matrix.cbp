@@ -98,9 +98,6 @@
 		<Unit filename="/cygdrive/i/matrix1/matrix/matrix.h">
 			<Option target="matrix"/>
 		</Unit>
-		<Unit filename="/cygdrive/i/matrix1/matrix/sparse1.hpp">
-			<Option target="matrix"/>
-		</Unit>
 		<Unit filename="/cygdrive/i/matrix1/matrix/sparse_matrix.cpp">
 			<Option target="matrix"/>
 		</Unit>

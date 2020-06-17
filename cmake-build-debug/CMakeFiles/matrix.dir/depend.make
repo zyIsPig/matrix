@@ -6,11 +6,13 @@ CMakeFiles/matrix.dir/main.cpp.o: ../matrix/Complex.h
 CMakeFiles/matrix.dir/main.cpp.o: ../matrix/exception.h
 CMakeFiles/matrix.dir/main.cpp.o: ../matrix/matrix.cpp
 CMakeFiles/matrix.dir/main.cpp.o: ../matrix/matrix.h
-CMakeFiles/matrix.dir/main.cpp.o: ../matrix/sparse1.hpp
 CMakeFiles/matrix.dir/main.cpp.o: ../matrix/sparse_matrix.h
 CMakeFiles/matrix.dir/main.cpp.o: ../matrix/vector.hpp
 
 CMakeFiles/matrix.dir/matrix/convert.cpp.o: ../matrix/convert.cpp
+CMakeFiles/matrix.dir/matrix/convert.cpp.o: ../matrix/matrix.h
+CMakeFiles/matrix.dir/matrix/convert.cpp.o: ../matrix/sparse_matrix.h
+CMakeFiles/matrix.dir/matrix/convert.cpp.o: ../matrix/vector.hpp
 
 CMakeFiles/matrix.dir/matrix/matrix.cpp.o: ../matrix/Complex.h
 CMakeFiles/matrix.dir/matrix/matrix.cpp.o: ../matrix/exception.h
@@ -19,5 +21,8 @@ CMakeFiles/matrix.dir/matrix/matrix.cpp.o: ../matrix/matrix.h
 CMakeFiles/matrix.dir/matrix/matrix.cpp.o: ../matrix/sparse_matrix.h
 CMakeFiles/matrix.dir/matrix/matrix.cpp.o: ../matrix/vector.hpp
 
+CMakeFiles/matrix.dir/matrix/sparse_matrix.cpp.o: ../matrix/matrix.h
 CMakeFiles/matrix.dir/matrix/sparse_matrix.cpp.o: ../matrix/sparse_matrix.cpp
+CMakeFiles/matrix.dir/matrix/sparse_matrix.cpp.o: ../matrix/sparse_matrix.h
+CMakeFiles/matrix.dir/matrix/sparse_matrix.cpp.o: ../matrix/vector.hpp
 

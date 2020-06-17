@@ -18,6 +18,7 @@ namespace matrix {
 
         matrix<T> add_private(matrix<T>);
         matrix<T> sub_private(matrix<T>);
+        matrix<T> multi_private(matrix<T>);
 
     public:
 
@@ -78,9 +79,25 @@ namespace matrix {
 
         matrix<T> subb(matrix<T> m);
 
+        void reshape(int a,int b);
 
+        matrix<T> slice(int rs,int re,int cs,int ce);
+
+        matrix<T> convoluton(const matrix<T> kernel);
+
+        T det();
+
+        matrix<T> multiplication(matrix<T>);
 
 //        sparse_matrix<T> convert_2_sparse_matrix();
+
+
+
+
+
+
+
+
 
 
 
@@ -88,7 +105,7 @@ namespace matrix {
     };
 
 
-};
+}
 
 
 #endif //MATRIX_MATRIX_H

@@ -13,10 +13,10 @@ matrix/matrix.h
 /cygdrive/i/matrix1/matrix/matrix.h
 matrix/matrix.cpp
 /cygdrive/i/matrix1/matrix/matrix.cpp
+matrix/sparse_matrix.h
+/cygdrive/i/matrix1/matrix/sparse_matrix.h
 matrix/vector.hpp
 /cygdrive/i/matrix1/matrix/vector.hpp
-matrix/sparse1.hpp
-/cygdrive/i/matrix1/matrix/sparse1.hpp
 
 /cygdrive/i/matrix1/matrix/Complex.h
 
@@ -46,12 +46,6 @@ sparse_matrix.h
 vector.hpp
 /cygdrive/i/matrix1/matrix/vector.hpp
 
-/cygdrive/i/matrix1/matrix/sparse1.hpp
-vector
-/cygdrive/i/matrix1/matrix/vector
-matrix.h
-/cygdrive/i/matrix1/matrix/matrix.h
-
 /cygdrive/i/matrix1/matrix/sparse_matrix.h
 matrix.h
 /cygdrive/i/matrix1/matrix/matrix.h
@@ -61,8 +55,6 @@ vector
 /cygdrive/i/matrix1/matrix/vector
 
 /cygdrive/i/matrix1/matrix/vector.hpp
-matrix.h
-/cygdrive/i/matrix1/matrix/matrix.h
 iostream
 /cygdrive/i/matrix1/matrix/iostream
 

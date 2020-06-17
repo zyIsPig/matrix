@@ -7,11 +7,13 @@ CMakeFiles/matrix.dir/main.cpp.o
  /cygdrive/i/matrix1/matrix/exception.h
  /cygdrive/i/matrix1/matrix/matrix.cpp
  /cygdrive/i/matrix1/matrix/matrix.h
- /cygdrive/i/matrix1/matrix/sparse1.hpp
  /cygdrive/i/matrix1/matrix/sparse_matrix.h
  /cygdrive/i/matrix1/matrix/vector.hpp
 CMakeFiles/matrix.dir/matrix/convert.cpp.o
  /cygdrive/i/matrix1/matrix/convert.cpp
+ /cygdrive/i/matrix1/matrix/matrix.h
+ /cygdrive/i/matrix1/matrix/sparse_matrix.h
+ /cygdrive/i/matrix1/matrix/vector.hpp
 CMakeFiles/matrix.dir/matrix/matrix.cpp.o
  /cygdrive/i/matrix1/matrix/Complex.h
  /cygdrive/i/matrix1/matrix/exception.h
@@ -20,4 +22,7 @@ CMakeFiles/matrix.dir/matrix/matrix.cpp.o
  /cygdrive/i/matrix1/matrix/sparse_matrix.h
  /cygdrive/i/matrix1/matrix/vector.hpp
 CMakeFiles/matrix.dir/matrix/sparse_matrix.cpp.o
+ /cygdrive/i/matrix1/matrix/matrix.h
  /cygdrive/i/matrix1/matrix/sparse_matrix.cpp
+ /cygdrive/i/matrix1/matrix/sparse_matrix.h
+ /cygdrive/i/matrix1/matrix/vector.hpp
