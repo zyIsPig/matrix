@@ -9,7 +9,8 @@
 #include "iostream"
 #include "exception.h"
 #include "Complex.h"
-
+#include "Eigen/Dense"
+using namespace Eigen;
 template <typename T>
 matrix::matrix<T>:: matrix(int row,int col) {
     this->col=col;
@@ -447,6 +448,58 @@ T matrix::matrix<T>::det(T **D, int n) {
         return d;
 
 }
+
+template<typename T>
+matrix::matrix<T> matrix::matrix<T>::eigenVectors() {
+    if(row!=col){
+        std::cout<<"Not a square matrix."<<std::endl;
+        return *this;
+    }else {
+        int n=row;
+        Eigen::MatrixXd mat(n,n);
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+                mat(i,j)=p[i][j];
+            }
+        }
+        EigenSolver<MatrixXd> es(mat);
+        MatrixXd V=es.pseudoEigenvectors();
+        matrix<T> eigenVectorMat(n,n);
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+                eigenVectorMat.p[i][j]=V(i,j);
+            }
+        }
+        return eigenVectorMat;
+    }
+
+}
+
+template<typename T>
+matrix::matrix<T> matrix::matrix<T>::eigenValues() {
+    if(row!=col){
+        std::cout<<"Not a square matrix."<<std::endl;
+        return *this;
+    }else{
+        int n=row;
+        MatrixXd mat(n,n);
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+                mat(i,j)=p[i][j];
+            }
+        }
+        EigenSolver<MatrixXd> es(mat);
+        MatrixXd D=es.pseudoEigenvalueMatrix();
+        matrix<T> eigenValueMat(n,n);
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+                eigenValueMat.p[i][j]=D(i,j);
+            }
+        }
+        return eigenValueMat;
+    }}
+
+
 
 
 

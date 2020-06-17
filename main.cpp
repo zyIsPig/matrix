@@ -1,8 +1,8 @@
 #include <iostream>
-#include "matrix/matrix.h"
-#include "matrix/matrix.cpp"
-#include "matrix/sparse_matrix.h"
-#include "matrix/vector.hpp"
+#include "matrix.h"
+#include "matrix.cpp"
+#include "sparse_matrix.h"
+#include "vector.hpp"
 #include "Eigen/Dense"
 
 #include "Eigen/Eigenvalues"
@@ -76,9 +76,7 @@ bool test_sum(){
 
 bool test_sparse(){
 
-    matrix::matrix<int> matrix1(3,3);
-    copy(matrix1);
-    matrix1.print();
+
 }
 
 bool test_vector(){
@@ -178,6 +176,25 @@ void Eig()
     std::cout << "The pseudo-eigenvector matrix V is:" << std::endl << V << std::endl;
     std::cout << "Finally, V * D * V^(-1) = " << std::endl << V * D * V.inverse() <<std:: endl;
 }
+
+//void aa(){
+//   matrix:: matrix<int> mat2(3,3);
+//    int m2[3][3]={{1,-3,3},
+//                  {3,-5,3},
+//                  {6,-6,4}};
+//    for(int i=0;i<3;i++){
+//        for(int j=0;j<3;j++){
+//            mat2.p[i][j]=m2[i][j];
+//        }
+//    }
+//    mat2.print();
+//    matrix::matrix<int> value(3,3);
+//    value=mat2.eigenValues();
+//    value.print();
+//    matrix<int> vector(3,3);
+//    vector=mat2.eigenVectors();
+//    vector.print();
+//}
 
 
 int main() {

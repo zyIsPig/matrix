@@ -123,6 +123,33 @@ matrix/fast:
 	$(MAKE) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/build
 .PHONY : matrix/fast
 
+convert.o: convert.cpp.o
+
+.PHONY : convert.o
+
+# target to build an object file
+convert.cpp.o:
+	$(MAKE) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/convert.cpp.o
+.PHONY : convert.cpp.o
+
+convert.i: convert.cpp.i
+
+.PHONY : convert.i
+
+# target to preprocess a source file
+convert.cpp.i:
+	$(MAKE) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/convert.cpp.i
+.PHONY : convert.cpp.i
+
+convert.s: convert.cpp.s
+
+.PHONY : convert.s
+
+# target to generate assembly for a file
+convert.cpp.s:
+	$(MAKE) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/convert.cpp.s
+.PHONY : convert.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -150,86 +177,59 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-matrix/convert.o: matrix/convert.cpp.o
+matrix.o: matrix.cpp.o
 
-.PHONY : matrix/convert.o
-
-# target to build an object file
-matrix/convert.cpp.o:
-	$(MAKE) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/matrix/convert.cpp.o
-.PHONY : matrix/convert.cpp.o
-
-matrix/convert.i: matrix/convert.cpp.i
-
-.PHONY : matrix/convert.i
-
-# target to preprocess a source file
-matrix/convert.cpp.i:
-	$(MAKE) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/matrix/convert.cpp.i
-.PHONY : matrix/convert.cpp.i
-
-matrix/convert.s: matrix/convert.cpp.s
-
-.PHONY : matrix/convert.s
-
-# target to generate assembly for a file
-matrix/convert.cpp.s:
-	$(MAKE) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/matrix/convert.cpp.s
-.PHONY : matrix/convert.cpp.s
-
-matrix/matrix.o: matrix/matrix.cpp.o
-
-.PHONY : matrix/matrix.o
+.PHONY : matrix.o
 
 # target to build an object file
-matrix/matrix.cpp.o:
-	$(MAKE) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/matrix/matrix.cpp.o
-.PHONY : matrix/matrix.cpp.o
+matrix.cpp.o:
+	$(MAKE) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/matrix.cpp.o
+.PHONY : matrix.cpp.o
 
-matrix/matrix.i: matrix/matrix.cpp.i
+matrix.i: matrix.cpp.i
 
-.PHONY : matrix/matrix.i
+.PHONY : matrix.i
 
 # target to preprocess a source file
-matrix/matrix.cpp.i:
-	$(MAKE) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/matrix/matrix.cpp.i
-.PHONY : matrix/matrix.cpp.i
+matrix.cpp.i:
+	$(MAKE) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/matrix.cpp.i
+.PHONY : matrix.cpp.i
 
-matrix/matrix.s: matrix/matrix.cpp.s
+matrix.s: matrix.cpp.s
 
-.PHONY : matrix/matrix.s
+.PHONY : matrix.s
 
 # target to generate assembly for a file
-matrix/matrix.cpp.s:
-	$(MAKE) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/matrix/matrix.cpp.s
-.PHONY : matrix/matrix.cpp.s
+matrix.cpp.s:
+	$(MAKE) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/matrix.cpp.s
+.PHONY : matrix.cpp.s
 
-matrix/sparse_matrix.o: matrix/sparse_matrix.cpp.o
+sparse_matrix.o: sparse_matrix.cpp.o
 
-.PHONY : matrix/sparse_matrix.o
+.PHONY : sparse_matrix.o
 
 # target to build an object file
-matrix/sparse_matrix.cpp.o:
-	$(MAKE) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/matrix/sparse_matrix.cpp.o
-.PHONY : matrix/sparse_matrix.cpp.o
+sparse_matrix.cpp.o:
+	$(MAKE) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/sparse_matrix.cpp.o
+.PHONY : sparse_matrix.cpp.o
 
-matrix/sparse_matrix.i: matrix/sparse_matrix.cpp.i
+sparse_matrix.i: sparse_matrix.cpp.i
 
-.PHONY : matrix/sparse_matrix.i
+.PHONY : sparse_matrix.i
 
 # target to preprocess a source file
-matrix/sparse_matrix.cpp.i:
-	$(MAKE) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/matrix/sparse_matrix.cpp.i
-.PHONY : matrix/sparse_matrix.cpp.i
+sparse_matrix.cpp.i:
+	$(MAKE) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/sparse_matrix.cpp.i
+.PHONY : sparse_matrix.cpp.i
 
-matrix/sparse_matrix.s: matrix/sparse_matrix.cpp.s
+sparse_matrix.s: sparse_matrix.cpp.s
 
-.PHONY : matrix/sparse_matrix.s
+.PHONY : sparse_matrix.s
 
 # target to generate assembly for a file
-matrix/sparse_matrix.cpp.s:
-	$(MAKE) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/matrix/sparse_matrix.cpp.s
-.PHONY : matrix/sparse_matrix.cpp.s
+sparse_matrix.cpp.s:
+	$(MAKE) -f CMakeFiles/matrix.dir/build.make CMakeFiles/matrix.dir/sparse_matrix.cpp.s
+.PHONY : sparse_matrix.cpp.s
 
 # Help Target
 help:
@@ -240,18 +240,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... matrix"
 	@echo "... edit_cache"
+	@echo "... convert.o"
+	@echo "... convert.i"
+	@echo "... convert.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... matrix/convert.o"
-	@echo "... matrix/convert.i"
-	@echo "... matrix/convert.s"
-	@echo "... matrix/matrix.o"
-	@echo "... matrix/matrix.i"
-	@echo "... matrix/matrix.s"
-	@echo "... matrix/sparse_matrix.o"
-	@echo "... matrix/sparse_matrix.i"
-	@echo "... matrix/sparse_matrix.s"
+	@echo "... matrix.o"
+	@echo "... matrix.i"
+	@echo "... matrix.s"
+	@echo "... sparse_matrix.o"
+	@echo "... sparse_matrix.i"
+	@echo "... sparse_matrix.s"
 .PHONY : help
 
 

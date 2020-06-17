@@ -82,31 +82,31 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/cygdrive/i/matrix1/Complex.h">
+			<Option target="matrix"/>
+		</Unit>
+		<Unit filename="/cygdrive/i/matrix1/convert.cpp">
+			<Option target="matrix"/>
+		</Unit>
+		<Unit filename="/cygdrive/i/matrix1/exception.h">
+			<Option target="matrix"/>
+		</Unit>
 		<Unit filename="/cygdrive/i/matrix1/main.cpp">
 			<Option target="matrix"/>
 		</Unit>
-		<Unit filename="/cygdrive/i/matrix1/matrix/Complex.h">
+		<Unit filename="/cygdrive/i/matrix1/matrix.cpp">
 			<Option target="matrix"/>
 		</Unit>
-		<Unit filename="/cygdrive/i/matrix1/matrix/convert.cpp">
+		<Unit filename="/cygdrive/i/matrix1/matrix.h">
 			<Option target="matrix"/>
 		</Unit>
-		<Unit filename="/cygdrive/i/matrix1/matrix/exception.h">
+		<Unit filename="/cygdrive/i/matrix1/sparse_matrix.cpp">
 			<Option target="matrix"/>
 		</Unit>
-		<Unit filename="/cygdrive/i/matrix1/matrix/matrix.cpp">
+		<Unit filename="/cygdrive/i/matrix1/sparse_matrix.h">
 			<Option target="matrix"/>
 		</Unit>
-		<Unit filename="/cygdrive/i/matrix1/matrix/matrix.h">
-			<Option target="matrix"/>
-		</Unit>
-		<Unit filename="/cygdrive/i/matrix1/matrix/sparse_matrix.cpp">
-			<Option target="matrix"/>
-		</Unit>
-		<Unit filename="/cygdrive/i/matrix1/matrix/sparse_matrix.h">
-			<Option target="matrix"/>
-		</Unit>
-		<Unit filename="/cygdrive/i/matrix1/matrix/vector.hpp">
+		<Unit filename="/cygdrive/i/matrix1/vector.hpp">
 			<Option target="matrix"/>
 		</Unit>
 		<Unit filename="/cygdrive/i/matrix1/CMakeLists.txt">

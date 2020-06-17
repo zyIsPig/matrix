@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/matrix.dir/convert.cpp.o"
   "CMakeFiles/matrix.dir/main.cpp.o"
-  "CMakeFiles/matrix.dir/matrix/convert.cpp.o"
-  "CMakeFiles/matrix.dir/matrix/matrix.cpp.o"
-  "CMakeFiles/matrix.dir/matrix/sparse_matrix.cpp.o"
+  "CMakeFiles/matrix.dir/matrix.cpp.o"
+  "CMakeFiles/matrix.dir/sparse_matrix.cpp.o"
   "libmatrix.dll.a"
   "matrix.exe"
   "matrix.pdb"

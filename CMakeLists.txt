@@ -6,6 +6,6 @@ set(CMAKE_CXX_STANDARD 14)
 
 include_directories("Eigen")
 
-add_executable(matrix main.cpp matrix/matrix.cpp matrix/matrix.h matrix/sparse_matrix.cpp matrix/sparse_matrix.h matrix/exception.h matrix/Complex.h matrix/convert.cpp
-        matrix/vector.hpp
+add_executable(matrix main.cpp matrix.cpp matrix.h sparse_matrix.cpp sparse_matrix.h exception.h Complex.h convert.cpp
+        vector.hpp
         )

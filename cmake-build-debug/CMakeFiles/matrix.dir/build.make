@@ -70,59 +70,59 @@ CMakeFiles/matrix.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/matrix.dir/main.cpp.s"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/i/matrix1/main.cpp -o CMakeFiles/matrix.dir/main.cpp.s
 
-CMakeFiles/matrix.dir/matrix/matrix.cpp.o: CMakeFiles/matrix.dir/flags.make
-CMakeFiles/matrix.dir/matrix/matrix.cpp.o: ../matrix/matrix.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/i/matrix1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/matrix.dir/matrix/matrix.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/matrix.dir/matrix/matrix.cpp.o -c /cygdrive/i/matrix1/matrix/matrix.cpp
+CMakeFiles/matrix.dir/matrix.cpp.o: CMakeFiles/matrix.dir/flags.make
+CMakeFiles/matrix.dir/matrix.cpp.o: ../matrix.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/i/matrix1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/matrix.dir/matrix.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/matrix.dir/matrix.cpp.o -c /cygdrive/i/matrix1/matrix.cpp
 
-CMakeFiles/matrix.dir/matrix/matrix.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/matrix.dir/matrix/matrix.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/i/matrix1/matrix/matrix.cpp > CMakeFiles/matrix.dir/matrix/matrix.cpp.i
+CMakeFiles/matrix.dir/matrix.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/matrix.dir/matrix.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/i/matrix1/matrix.cpp > CMakeFiles/matrix.dir/matrix.cpp.i
 
-CMakeFiles/matrix.dir/matrix/matrix.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/matrix.dir/matrix/matrix.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/i/matrix1/matrix/matrix.cpp -o CMakeFiles/matrix.dir/matrix/matrix.cpp.s
+CMakeFiles/matrix.dir/matrix.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/matrix.dir/matrix.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/i/matrix1/matrix.cpp -o CMakeFiles/matrix.dir/matrix.cpp.s
 
-CMakeFiles/matrix.dir/matrix/sparse_matrix.cpp.o: CMakeFiles/matrix.dir/flags.make
-CMakeFiles/matrix.dir/matrix/sparse_matrix.cpp.o: ../matrix/sparse_matrix.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/i/matrix1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/matrix.dir/matrix/sparse_matrix.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/matrix.dir/matrix/sparse_matrix.cpp.o -c /cygdrive/i/matrix1/matrix/sparse_matrix.cpp
+CMakeFiles/matrix.dir/sparse_matrix.cpp.o: CMakeFiles/matrix.dir/flags.make
+CMakeFiles/matrix.dir/sparse_matrix.cpp.o: ../sparse_matrix.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/i/matrix1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/matrix.dir/sparse_matrix.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/matrix.dir/sparse_matrix.cpp.o -c /cygdrive/i/matrix1/sparse_matrix.cpp
 
-CMakeFiles/matrix.dir/matrix/sparse_matrix.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/matrix.dir/matrix/sparse_matrix.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/i/matrix1/matrix/sparse_matrix.cpp > CMakeFiles/matrix.dir/matrix/sparse_matrix.cpp.i
+CMakeFiles/matrix.dir/sparse_matrix.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/matrix.dir/sparse_matrix.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/i/matrix1/sparse_matrix.cpp > CMakeFiles/matrix.dir/sparse_matrix.cpp.i
 
-CMakeFiles/matrix.dir/matrix/sparse_matrix.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/matrix.dir/matrix/sparse_matrix.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/i/matrix1/matrix/sparse_matrix.cpp -o CMakeFiles/matrix.dir/matrix/sparse_matrix.cpp.s
+CMakeFiles/matrix.dir/sparse_matrix.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/matrix.dir/sparse_matrix.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/i/matrix1/sparse_matrix.cpp -o CMakeFiles/matrix.dir/sparse_matrix.cpp.s
 
-CMakeFiles/matrix.dir/matrix/convert.cpp.o: CMakeFiles/matrix.dir/flags.make
-CMakeFiles/matrix.dir/matrix/convert.cpp.o: ../matrix/convert.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/i/matrix1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/matrix.dir/matrix/convert.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/matrix.dir/matrix/convert.cpp.o -c /cygdrive/i/matrix1/matrix/convert.cpp
+CMakeFiles/matrix.dir/convert.cpp.o: CMakeFiles/matrix.dir/flags.make
+CMakeFiles/matrix.dir/convert.cpp.o: ../convert.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/i/matrix1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/matrix.dir/convert.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/matrix.dir/convert.cpp.o -c /cygdrive/i/matrix1/convert.cpp
 
-CMakeFiles/matrix.dir/matrix/convert.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/matrix.dir/matrix/convert.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/i/matrix1/matrix/convert.cpp > CMakeFiles/matrix.dir/matrix/convert.cpp.i
+CMakeFiles/matrix.dir/convert.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/matrix.dir/convert.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/i/matrix1/convert.cpp > CMakeFiles/matrix.dir/convert.cpp.i
 
-CMakeFiles/matrix.dir/matrix/convert.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/matrix.dir/matrix/convert.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/i/matrix1/matrix/convert.cpp -o CMakeFiles/matrix.dir/matrix/convert.cpp.s
+CMakeFiles/matrix.dir/convert.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/matrix.dir/convert.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/i/matrix1/convert.cpp -o CMakeFiles/matrix.dir/convert.cpp.s
 
 # Object files for target matrix
 matrix_OBJECTS = \
 "CMakeFiles/matrix.dir/main.cpp.o" \
-"CMakeFiles/matrix.dir/matrix/matrix.cpp.o" \
-"CMakeFiles/matrix.dir/matrix/sparse_matrix.cpp.o" \
-"CMakeFiles/matrix.dir/matrix/convert.cpp.o"
+"CMakeFiles/matrix.dir/matrix.cpp.o" \
+"CMakeFiles/matrix.dir/sparse_matrix.cpp.o" \
+"CMakeFiles/matrix.dir/convert.cpp.o"
 
 # External object files for target matrix
 matrix_EXTERNAL_OBJECTS =
 
 matrix.exe: CMakeFiles/matrix.dir/main.cpp.o
-matrix.exe: CMakeFiles/matrix.dir/matrix/matrix.cpp.o
-matrix.exe: CMakeFiles/matrix.dir/matrix/sparse_matrix.cpp.o
-matrix.exe: CMakeFiles/matrix.dir/matrix/convert.cpp.o
+matrix.exe: CMakeFiles/matrix.dir/matrix.cpp.o
+matrix.exe: CMakeFiles/matrix.dir/sparse_matrix.cpp.o
+matrix.exe: CMakeFiles/matrix.dir/convert.cpp.o
 matrix.exe: CMakeFiles/matrix.dir/build.make
 matrix.exe: CMakeFiles/matrix.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/i/matrix1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable matrix.exe"

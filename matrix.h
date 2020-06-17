@@ -93,6 +93,13 @@ namespace matrix {
 
         matrix<T> multiplication(matrix<T>);
 
+        matrix<T> eigenVectors();
+
+        matrix<T> eigenValues();
+
+
+
+
 //        sparse_matrix<T> convert_2_sparse_matrix();
 
 

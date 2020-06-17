@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+/cygdrive/i/matrix1/Complex.h
+
 /cygdrive/i/matrix1/Eigen/Cholesky
 Core
 /cygdrive/i/matrix1/Eigen/Core
@@ -1002,59 +1004,69 @@ Eigen/src/Core/util/MKL_support.h
 
 /cygdrive/i/matrix1/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 
+/cygdrive/i/matrix1/convert.cpp
+matrix.h
+/cygdrive/i/matrix1/matrix.h
+sparse_matrix.h
+/cygdrive/i/matrix1/sparse_matrix.h
+
+/cygdrive/i/matrix1/exception.h
+
 /cygdrive/i/matrix1/main.cpp
 iostream
 -
-matrix/matrix.h
-/cygdrive/i/matrix1/matrix/matrix.h
-matrix/matrix.cpp
-/cygdrive/i/matrix1/matrix/matrix.cpp
-matrix/sparse_matrix.h
-/cygdrive/i/matrix1/matrix/sparse_matrix.h
-matrix/vector.hpp
-/cygdrive/i/matrix1/matrix/vector.hpp
+matrix.h
+/cygdrive/i/matrix1/matrix.h
+matrix.cpp
+/cygdrive/i/matrix1/matrix.cpp
+sparse_matrix.h
+/cygdrive/i/matrix1/sparse_matrix.h
+vector.hpp
+/cygdrive/i/matrix1/vector.hpp
 Eigen/Dense
 /cygdrive/i/matrix1/Eigen/Dense
 Eigen/Eigenvalues
 /cygdrive/i/matrix1/Eigen/Eigenvalues
 
-/cygdrive/i/matrix1/matrix/Complex.h
-
-/cygdrive/i/matrix1/matrix/exception.h
-
-/cygdrive/i/matrix1/matrix/matrix.cpp
+/cygdrive/i/matrix1/matrix.cpp
 matrix.h
-/cygdrive/i/matrix1/matrix/matrix.h
+/cygdrive/i/matrix1/matrix.h
 type_traits
 -
 malloc.h
 -
 string
-/cygdrive/i/matrix1/matrix/string
+/cygdrive/i/matrix1/string
 iostream
-/cygdrive/i/matrix1/matrix/iostream
+/cygdrive/i/matrix1/iostream
 exception.h
-/cygdrive/i/matrix1/matrix/exception.h
+/cygdrive/i/matrix1/exception.h
 Complex.h
-/cygdrive/i/matrix1/matrix/Complex.h
+/cygdrive/i/matrix1/Complex.h
+Eigen/Dense
+/cygdrive/i/matrix1/Eigen/Dense
 
-/cygdrive/i/matrix1/matrix/matrix.h
+/cygdrive/i/matrix1/matrix.h
 cstdio
 -
 sparse_matrix.h
-/cygdrive/i/matrix1/matrix/sparse_matrix.h
+/cygdrive/i/matrix1/sparse_matrix.h
 vector.hpp
-/cygdrive/i/matrix1/matrix/vector.hpp
+/cygdrive/i/matrix1/vector.hpp
 
-/cygdrive/i/matrix1/matrix/sparse_matrix.h
+/cygdrive/i/matrix1/sparse_matrix.cpp
+sparse_matrix.h
+/cygdrive/i/matrix1/sparse_matrix.h
+
+/cygdrive/i/matrix1/sparse_matrix.h
 matrix.h
-/cygdrive/i/matrix1/matrix/matrix.h
+/cygdrive/i/matrix1/matrix.h
 cstdio
 -
 vector
-/cygdrive/i/matrix1/matrix/vector
+/cygdrive/i/matrix1/vector
 
-/cygdrive/i/matrix1/matrix/vector.hpp
+/cygdrive/i/matrix1/vector.hpp
 iostream
-/cygdrive/i/matrix1/matrix/iostream
+/cygdrive/i/matrix1/iostream
 
