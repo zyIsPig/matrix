@@ -3,6 +3,9 @@ project(matrix)
 
 set(CMAKE_CXX_STANDARD 14)
 
+
+include_directories("Eigen")
+
 add_executable(matrix main.cpp matrix/matrix.cpp matrix/matrix.h matrix/sparse_matrix.cpp matrix/sparse_matrix.h matrix/exception.h matrix/Complex.h matrix/convert.cpp
         matrix/vector.hpp
         )

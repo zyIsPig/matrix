@@ -2,7 +2,13 @@
 #include "matrix/matrix.h"
 #include "matrix/matrix.cpp"
 #include "matrix/sparse_matrix.h"
-#include "matrix/vector.hpp";
+#include "matrix/vector.hpp"
+#include "Eigen/Dense"
+
+#include "Eigen/Eigenvalues"
+using namespace Eigen;
+
+
 
 int test[3][3]={{1,2,3},{23,1,2},{3,10,2}};
 int m11[3][3]={{1,0,1},{2,0,2},{21,1,0}};
@@ -132,19 +138,55 @@ bool test_trans(){
 }
 
 bool test_multi(){
-    matrix::matrix<int> matrix1(3,3);
-    copy(matrix1);
-    matrix::matrix<int> matrix2(3,3);
-    copy(matrix2);
-    matrix2 = matrix1.multiplication(matrix2);
-    matrix2.print();
-    return 0;
+    matrix::matrix<int> mat2(3,3);
+    int m2[3][3]={{1,2,3},
+                  {-1,0,1},
+                  {2,1,2}};
+    for(int i=0;i<3;i++){
+        for(int j=0;j<3;j++){
+            mat2.p[i][j]=m2[i][j];
+        }
+    }
+    mat2.print();
+    std::cout<<mat2.determinant()<<std::endl;
 }
+
+bool testhan(){
+    matrix::matrix<int> mat2(3,3);
+    int m2[3][3]={{1,2,3},
+                  {-1,0,1},
+                  {2,1,2}};
+    for(int i=0;i<3;i++){
+        for(int j=0;j<3;j++){
+            mat2.p[i][j]=m2[i][j];
+        }
+    }
+    mat2.print();
+    std::cout<<mat2.det()<<std::endl;
+}
+
+void Eig()
+{
+    Matrix3d A;
+    A << 1, 2, 3, 4, 5, 6, 7, 8, 9;
+    std::cout << "Here is a 3x3 matrix, A:" << std::endl << A << std::endl << std::endl;
+    EigenSolver<Matrix3d> es(A);
+
+    Matrix3d D = es.pseudoEigenvalueMatrix();
+    Matrix3d V = es.pseudoEigenvectors();
+    std::cout << "The pseudo-eigenvalue matrix D is:" << std::endl << D << std::endl;
+    std::cout << "The pseudo-eigenvector matrix V is:" << std::endl << V << std::endl;
+    std::cout << "Finally, V * D * V^(-1) = " << std::endl << V * D * V.inverse() <<std:: endl;
+}
+
 
 int main() {
 
+    test_multi();
 //    test_multi();
-    test_trans();
+//    test_trans();
+//    Eig();
+//    testhan();
 //    matrix::matrix <int> mat1(3,4);
 //
 //    int m1[3][4]={{1,2,3,4},

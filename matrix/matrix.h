@@ -87,6 +87,10 @@ namespace matrix {
 
         T det();
 
+        T determinant();
+
+        T det(T** D,int n);
+
         matrix<T> multiplication(matrix<T>);
 
 //        sparse_matrix<T> convert_2_sparse_matrix();

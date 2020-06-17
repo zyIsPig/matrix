@@ -410,6 +410,44 @@ matrix::matrix<T> matrix::matrix<T>::multiplication(matrix<T> matrix1) {
     return matrix1;
 }
 
+template<typename T>
+T matrix::matrix<T>::determinant() {
+    if(row!=col){
+        std::cout<<"Not a square matrix."<<std::endl;
+        return 0;
+    }else {
+        return det(p,row);
+    }
+}
+
+template<typename T>
+T matrix::matrix<T>::det(T **D, int n) {
+
+        T d=0;
+        if(n==1)d=D[0][0];
+        if(n==2)d=D[0][0]*D[1][1]-D[0][1]*D[1][0];
+        else{
+            for(int k=0;k<n;k++){
+                T **M;
+                M=(T**)malloc((n-1)*sizeof(T*));
+                for(int i=0;i<n-1;i++)
+                    M[i]=(T*)malloc((n-1)*sizeof(T));
+
+                for(int i=0;i<n-1;i++)
+                    for(int j=0;j<n-1;j++)
+                        M[i][j]=D[i+1][j<k?j:j+1];
+
+                if(D[0][k])
+                    d+=D[0][k]*det(M,n-1)*(((2+k)%2)?-1:1);
+
+                for(int i=0;i<n-1;i++)free(M[i]);
+                free(M);
+            }
+        }
+        return d;
+
+}
+
 
 
 
